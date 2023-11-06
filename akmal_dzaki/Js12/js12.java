@@ -14,7 +14,7 @@ public class js12 {
             System.out.println("1. Nutrisi\n2. Air\n3. Tampilkan buah\n4. Keluar");
             pill = in.nextInt();
             if(pill == 1){
-                tumbuhan.fotosintesis();
+                // tumbuhan.fotosintesis();
                 
             } else if (pill == 2){
                 tumbuhan.tambahAir();
