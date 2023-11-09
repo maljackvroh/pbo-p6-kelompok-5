@@ -1,5 +1,5 @@
 package studi_kasus.services;
 
-public class offline {
+public class offline extends services {
     
 }
