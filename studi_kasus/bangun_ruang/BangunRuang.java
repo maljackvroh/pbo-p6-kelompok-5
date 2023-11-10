@@ -1,4 +1,4 @@
-package bangun_ruang;
+package studi_kasus.bangun_ruang;
 
 public class BangunRuang {
     protected double volume;
