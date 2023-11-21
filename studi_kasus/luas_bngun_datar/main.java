@@ -22,33 +22,33 @@ public class main {
 
         do {
             System.out.println("\nMana yang ingin anda cari?");
-            System.out.println("Pilihan: ");
+            System.out.print("Pilihan: ");
             pill = in.nextInt();
 
             switch (pill) {
                 case 1:
-                    System.out.println("Masukan nilai alas: ");
+                    System.out.print("Masukan nilai alas: ");
                     float a = in.nextFloat();
-                    System.out.println("Masukan nilai tinggi: ");
+                    System.out.print("Masukan nilai tinggi: ");
                     float b = in.nextFloat();
 
-                    System.out.println("Hasil = "+math.jajar_gen(a, b));
+                    System.out.print("Hasil = "+math.jajar_gen(a, b));
                     break;
                 
                 case 2:
-                    System.out.println("Masukan nilai sisi: ");
+                    System.out.print("Masukan nilai sisi: ");
                     float c = in.nextFloat();
 
-                    System.out.println("Hasil = "+math.persegi(c));
+                    System.out.print("Hasil = "+math.persegi(c));
                     break;
 
                 case 3:
-                    System.out.println("Masukan nilai panjang: ");
+                    System.out.print("Masukan nilai panjang: ");
                     float d = in.nextFloat();
-                    System.out.println("Masukan nilai lebar");
+                    System.out.print("Masukan nilai lebar");
                     float e = in.nextFloat();
 
-                    System.out.println("Hasil = "+math.ling(d, e));
+                    System.out.print("Hasil = "+math.ling(d, e));
                     break;
 
                 default:

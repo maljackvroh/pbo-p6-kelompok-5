@@ -2,51 +2,49 @@ package akmal_dzaki.Js7;
 
 import java.util.Scanner;
 
-public class js7 extends pil{
+public class js7 extends procces{
     Scanner in = new Scanner(System.in);
-    
-    @Override
-    public void procces() {
-        // js4 data = new js4();
-        // int x = data.dat.size();
-
-        // System.out.println(data.dat);
-        System.out.println("Berikut beberapa program yang dapat kamu lakukan: ");
-        System.out.println("1. Say Hi");
-        System.out.println("2. Say Bye");
-        System.out.println("3. Say u love urself");
-        System.out.print("Pilih: ");
-
-        int pill = in.nextInt();
-        switch (pill) {
-            case 1:
-                System.out.println("Hiii....");
-                
-                break;
-
-            case 2:
-                System.out.println("Bye byee!!");
-                break;
-            
-            case 3:
-                System.out.println("I love myself!!!!");
-                break;
-
-            default:
-                System.out.println("Inputan salah");
-                break;
-        }
-        
-    }
-
-
+    procces dats = new procces();
     
     public static void main(String[] args) {
-        js7 nilai = new js7();
+        Scanner in = new Scanner(System.in);
+        js7 dats = new js7();
+        int pil = 1;
 
-        System.out.println("\nIni adalah program ini dh");
+        System.out.println("\nSelamat datang diprogram ini!");
+        System.out.println("=============================");
+
+        do{
+            System.out.println("Berikut beberapa program yang dapat kamu lakukan: ");
+            System.out.println("1. Input");
+            System.out.println("2. Sort");
+            System.out.println("3. Delete");
+            System.out.print("Pilih: ");
+
+            int pill = in.nextInt();
+            switch (pill) {
+                case 1:
+                    dats.input();
+                    break;
+
+                case 2:
+                    dats.sort();
+                    break;
+            
+                case 3:
+                    dats.del();
+                    break;
+
+                default:
+                    System.out.println("Inputan salah");
+                    break;
+            }
+
+            System.out.print("Apakah anda ingin coba lagi?(1/0): ");
+            pil = in.nextInt();
+        } while(pil == 1);
+
         
-        nilai.procces();
 
 
     }
