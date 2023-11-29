@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
-        ling math = new ling();
+        
         Scanner in = new Scanner(System.in);
 
         int pill;
@@ -32,14 +32,16 @@ public class main {
                     System.out.print("Masukan nilai tinggi: ");
                     float b = in.nextFloat();
 
-                    System.out.print("Hasil = "+math.jajar_gen(a, b));
+                    jajar jjr = new jajar(a, b);
+                    System.out.print("Hasil = "+jjr.luas());
                     break;
                 
                 case 2:
                     System.out.print("Masukan nilai sisi: ");
                     float c = in.nextFloat();
 
-                    System.out.print("Hasil = "+math.persegi(c));
+                    persegi prs = new persegi(c);
+                    System.out.print("Hasil = "+prs.luas());
                     break;
 
                 case 3:
@@ -48,7 +50,8 @@ public class main {
                     System.out.print("Masukan nilai lebar");
                     float e = in.nextFloat();
 
-                    System.out.print("Hasil = "+math.ling(d, e));
+                    ling lng = new ling(d, e);
+                    System.out.print("Hasil = "+lng.luas());
                     break;
 
                 default:

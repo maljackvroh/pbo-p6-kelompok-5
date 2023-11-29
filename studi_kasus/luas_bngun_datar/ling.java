@@ -1,11 +1,16 @@
 package studi_kasus.luas_bngun_datar;
 
-public class ling extends persegi{
+public class ling extends dat{
     float p;
     float l;
 
-    public float ling(float p, float l){
-        float hasil = p*l;
-        return hasil;
+    ling(float p, float l){
+        this.p = p;
+        this.l = l;
+    }
+
+    @Override
+    float luas(){
+        return p*l;
     }
 }
